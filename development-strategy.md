@@ -2,7 +2,11 @@
 
 This is a simple website in which users can check their JS knowledge by taking a quick quiz.
 
----
+The purpose of this project is to practice how to decompose & plan projects, organize your code, and use HTML, CSS and JavaScript.
+
+What is new about this project? With this project you should also learn how to use **State**. This is a fancy programming term to talk about the data stored by your web pages. Nearly every app you use has state -> message histories, images, profile details, weather reports, … you name it!
+
+To help you understand and debug your projects you will learn about logging - this is a technique where you store a record of every user interaction, all user input, and each state change. With this technique you will find that it is helpful way to simplify and understand what is happening in your program.
 
 ## User Story Dependencies
 
@@ -12,144 +16,113 @@ This is a simple website in which users can check their JS knowledge by taking a
 
 ## WIREFRAME
 
-![wireframe](./img/wireframe.jpg)
+![wireframe](./src/images/wire-frame.png)
 
 ---
 
 ## 0.Setup
 
-- Start a repo.
+- Created a new repository from [this template](https://github.com/HackYourFutureBelgium/state-project-js-quiz)
+- Clone the repository
+- Write initial, basic README
+- Add a wireframe
+- Start the development strategy
+- Prepare a project board
+- Push the changes to GitHub
+- Turn on GitHub Pages
 - Study (and possibly modify) the backlog
-- Design a simple wireframe to set guidelines for UI/UX design.
-- Devise a development strategy.
 
----
+## 1.
 
-## 1. Initialize Application
+**As a user I want to see..**
 
-__As a user I want to see the home page when I load the site__
-
-- _acceptance criteria_
-- _acceptance criteria_
-- ...
+> Assigned to
 
 ### REPO
 
 - This user story is developed on branch `_`.
 - This branch is merged to `master` branch after completion.
 
-### Task A
+### Changes in HTML
 
-### Task B
+### Changes in CSS
 
-### Task ...
+### Changes in JavaScript
 
 ---
 
-## 2. Begin the Quiz
+## 2.
 
-__As a user I want to see at least 8 quiz questions__
+**As a user I want to see..**
 
-- _acceptance criteria_
-- _acceptance criteria_
-- ...
+> Assigned to
 
 ### REPO
 
-- This user story is developed on the branch `_`
-- This branch is merged to the `master` branch after completion.
+- This user story is developed on branch `_`.
+- This branch is merged to `master` branch after completion.
 
-### Task A
+### Changes in HTML
 
-### Task B
+### Changes in CSS
 
-### Task ...
-
+### Changes in JavaScript
 
 ---
 
-## 3. Select an answer
+## 3.
 
-__As a user I want to select my answer for each quiz question__
+**As a user I want to see..**
 
-- _acceptance criteria_
-- _acceptance criteria_
-- ...
+> Assigned to
 
 ### REPO
 
-- This user story is developed on the branch `_`
-- This branch is merged to the `master` branch after completion.
+- This user story is developed on branch `_`.
+- This branch is merged to `master` branch after completion.
 
-### Task A
+### Changes in HTML
 
-### Task B
+### Changes in CSS
 
-### Task ...
+### Changes in JavaScript
 
 ---
 
-## 4.a View Score
+### 4.
 
-__As a user I want to see my score__
+**As a user I want to see..**
 
-- _acceptance criteria_
-- _acceptance criteria_
-- ...
+> Assigned to
 
 ### REPO
 
-- This user story is developed on the branch `_`
-- This branch is merged to the `master` branch after completion.
+- This user story is developed on branch `_`.
+- This branch is merged to `master` branch after completion.
 
-### Task A
+### Changes in HTML
 
-### Task B
+### Changes in CSS
 
-### Task ...
+### Changes in JavaScript
 
 ---
 
-## 4.b Get Feedback
+## 5.
 
-__As a user I want to know the correct answers for incorrect questions__
+**As a user I want to see..**
 
-- _acceptance criteria_
-- _acceptance criteria_
-- ...
+> Assigned to
 
 ### REPO
 
-- This user story is developed on the branch `_`
-- This branch is merged to the `master` branch after completion.
+- This user story is developed on branch `_`.
+- This branch is merged to `master` branch after completion.
 
-### Task A
+### Changes in HTML
 
-### Task B
+### Changes in CSS
 
-### Task ...
-
-
----
-
-## 5. Cheat
-
-__As a user I want to be able to see the correct answers without taking the quiz__
-
-- _acceptance criteria_
-- _acceptance criteria_
-- ...
-
-### REPO
-
-- This user story is developed on the branch `_`
-- This branch is merged to the `master` branch after completion.
-
-### Task A
-
-### Task B
-
-### Task ...
+### Changes in JavaScript
 
 ---
-
