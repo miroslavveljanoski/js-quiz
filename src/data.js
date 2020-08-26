@@ -65,7 +65,7 @@ const state = {
     },
     {
       text: 'Who is the best teacher for web development?',
-      answers: ['Evan Cole', 'Mosh Hamedani', 'Wes Bos', 'Brad - Traversy Media'],
+      answers: ['Evan Cole', 'Wes Bos', 'Brad - Traversy Media'],
       correct: 0,
       selected: -1,
       links: [
