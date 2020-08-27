@@ -1,40 +1,65 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Quiz</title>
 
-<head>
-  <meta charset='utf8'>
-  <title>your project name</title>
+    <link href="./style.css" rel="stylesheet" />
 
-  <link href="./style.css" rel="stylesheet" />
+    <!-- load the testing dependencies -->
+    <script src="./lib/chai.js"></script>
+    <script src="./lib/describe-it.js"></script>
+    <script src="./lib/gremlins.js"></script>
 
-  <!-- load the testing dependencies -->
-  <script src='./lib/chai.js'></script>
-  <script src='./lib/describe-it.js'></script>
-  <script src='./lib/gremlins.js'></script>
+    <!-- load the logging dependency -->
+    <script src="./lib/deep-clone.js"></script>
 
-  <!-- load the logging dependency -->
-  <script src='./lib/deep-clone.js'></script>
+    <!-- load src files -->
+    <script src="./src/data.js"></script>
+    <script src="./src/log.js"></script>
+    <script src="./src/init.js"></script>
+  </head>
 
-  <!-- load src files -->
-  <script src='./src/data.js'></script>
-  <script src='./src/log.js'></script>
-  <script src='./src/init.js'></script>
+  <body>
+    <!-- HEADER -->
+    <div class="container">
+      <header id="container-header">
+        <div id="welcome-title">
+          <h2>Welcome to our JavaScript Quiz</h2>
+        </div>
+        <div id="btn-one">
+          <button class="btn" id="btn-cheat">CHEAT</button>
+        </div>
+        <div id="btn-two">
+          <p id="score">SCORE:</p>
+          <p id="answer">ANSWER:</p>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main id="container-main">
+        <div id="question">
+          <p>What are the different ways to declare a JS variable?</p>
+        </div>
+        <div id="answers">
+          <button class="choices" id="first-answer">constant, let, variable</button>
+          <button class="choices" id="second-answer">var, const, let, function</button>
+          <button class="choices" id="third-answer">var, let, const</button>
+        </div>
+      </main>
 
+      <!-- FOOTER -->
+      <div id="container-footer">
+        <button class="btn" id="btn-source">SOURCE</button>
+        <button class="btn" id="btn-reset">RESET</button>
+        <button class="btn" id="btn-next">NEXT</button>
+      </div>
+    </div>
 
+    <!-- load listeners -->
 
-</head>
-
-<body>
-
-
-
-  <!-- load listeners -->
-
-
-  <!-- Leave this here, it renders the review buttons
+    <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
-  <script src='./lib/review-buttons.js'></script>
-
-</body>
-
+    <script src="./lib/review-buttons.js"></script>
+  </body>
 </html>

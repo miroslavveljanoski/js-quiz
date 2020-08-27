@@ -32,24 +32,29 @@ To help you understand and debug your projects you will learn about logging - th
 - Turn on GitHub Pages
 - Study (and possibly modify) the backlog
 
-## 1.
+## 1. Initialize Application
 
-**As a user I want to see..**
+**As a user I want to see the home page when I load the site**
 
-> Assigned to
+> Assigned to Miroslav
 
 ### REPO
 
-- This user story is developed on branch `_`.
+- This user story is developed on branch `page-structure`.
 - This branch is merged to `master` branch after completion.
 
 ### Changes in HTML
 
+- Write the initial content for the page
+- Write all the buttons needed for the page
+
 ### Changes in CSS
+
+- Make starter basic style to the content the page
 
 ### Changes in JavaScript
 
----
+- Write all questions, possible answers, correct answers and links in the "questions" array in the data.js file.
 
 ## 2.
 
