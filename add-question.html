@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./src/handlers/add-question.js"></script>
+    
+    
+</head>
+<body>
+<section >
+        <h2>Add Question</h2> <P id="score1">Score</P>
+        <label id="label1">Question</label><br>
+        <input type="text" id="input1" placeholder="your question "><br>
+        <label id="label2">Answer</label><br>
+        <input  type="text" focus= "this.value=''" id="input2" placeholder="Answer"><br>
+        <input type="submit" id="submit">
+        
+        <div id="container">
+          <div id="div">
+          <ul id="ul"> </ul>
+       </div>
+    </section>  
+    
+    <audio id="sound1" src="sounds/boom.wav"></audio>   
+    <audio id="sound2" src="sounds/kick.wav"></audio>
+    
+ 
+    <script src="./src/listeners/add-question.js"></script>    
+</body>
+</html>
