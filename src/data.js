@@ -1,10 +1,10 @@
-/* Suggested Initial State
-
-  this file contains a suggestion of what your initial state should include
-  feel free to modify, add or remove properties as your team's project evolves
-
+/* Add the state in the const `questions` with 10 objects-questions with two pars keys-value:
+{question: 'string';
+answers: [4 objects-variants with two pairs key-value
+          {text: 'string',
+          correct: boolean } ]
+}
 */
-
 const state = {
   quiz: {
     // computed at the beginning of the quiz using the length of .questions
@@ -19,73 +19,103 @@ const state = {
     correct: 0,
     // how do you want to measure score?
     //  that's up to you!
-    score: 0,
+    score: 0
   },
-  // the questions in the quiz
-  questions: [
-    {
-      text: 'What are the different ways to declare a JS variable?',
-      answers: ['constant, let, variable', 'var, const, let, function', 'var, let, const'],
-      correct: 2,
-      selected: -1,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-      ],
-    },
-    {
-      text: 'What does `typeof` do?',
-      answers: [
-        'changes the type of a primitive value',
-        'returns a string describing the type of a value',
-        'determines if a value is primitive',
-      ],
-      correct: 1,
-      selected: -1,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/types#type-typeof',
-        },
-      ],
-    },
-    {
-      text: 'How can you create an object in JavaScript?',
-      answers: ['Using curly brackets{}', 'Using square brackets[]', 'Using the magic word Object'],
-      correct: 0,
-      selected: -1,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/object',
-        },
-      ],
-    },
-    {
-      text: 'Who is the best teacher for web development?',
-      answers: ['Evan Cole', 'Wes Bos', 'Brad - Traversy Media'],
-      correct: 0,
-      selected: -1,
-      links: [
-        {
-          text: 'github.com/colevandersWands',
-          href: 'https://github.com/colevandersWands',
-        },
-      ],
-    },
-    {
-      text: 'Which is the best coding school for web development in Europa?',
-      answers: ['HackYourFuture Amsterdam', 'HackYourFuture Belgium', 'HackYourFuture Copenhagen'],
-      correct: 1,
-      selected: -1,
-      links: [
-        {
-          text: 'github.com/colevandersWands',
-          href: 'https://github.com/colevandersWands',
-        },
-      ],
-    },
-  ],
-};
+}
+
+const questions =[
+  {  question: 'Inside which HTML element do we put the JavaScript?',
+     answers: [
+     {text: '<scripting>', correct: false },
+     {text: '<script>', correct: true },
+     {text: '<javascript>', correct: false },
+     {text: '<js>', correct: false }
+     ]
+ },
+
+  {  question: 'Where is the correct place to insert a JavaScript?',
+     answers: [
+     {text: 'The <body> section', correct: false },
+     {text: 'The <head> section', correct: false},
+     {text: 'Both the <head> section and the <body> section are correct', correct: true},
+     {text: 'In the beginning of separate file.js', correct: false}
+     ]
+ },
+
+  {  question: 'What is the correct syntax for referring to an external script called "xxx.js"?',
+     answers: [
+     { text: '<script name="xxx.js">', correct: false },
+     {text: '<script href="xxx.js">', correct: false},
+     {text: '<script src ="xxx.js">', correct: true },
+     {text: '<script id="xxx.js">', correct: false }
+     ]
+ },
+
+  {  question: 'How do you write "Hello World" in an alert box?',
+     answers: [
+     {text: 'alertBox("Hello World")', correct: false },
+     {text: 'print("Hello World")', correct: false},
+     {text: 'alert("Hello World")', correct: true},
+     {text: 'consol.log("Hello World")', correct: false}
+     ]
+ },
+
+  {  question: 'How do you create a function in JavaScript?',
+     answers: [
+     {text: 'function myFunction()', correct: true},
+     {text: 'function: myFunction()', correct: false},
+     {text: 'function = myFunction()', correct: false},
+     {text: 'function -> myFunction()', correct: false}
+     ]
+ },
+
+  {  question: 'How do you call a function named "myFunction"?',
+     answers: [
+     {text: 'call myFunction()', correct: false},
+     {text: 'myFunction()', correct: true},
+     {text: 'call function myFunction()', correct: false},
+     {text: '()', correct: false}
+     ]
+ },
+
+  {  question: 'How to write an IF statement in JavaScript?',
+     answers: [
+     {text: 'if i==5 then', correct: false},
+     {text: 'if (i==5)', correct: true},
+     {text: 'if i=5', correct: false},
+     {text: 'if i=5 then ', correct: false}
+     ]
+ },
+
+  {  question: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
+     answers: [
+     {text: 'if i =! 5 then', correct: false},
+     {text: 'if i <> 5', correct: false},
+     {text: 'if (i <> 5)', correct: false},
+     {text: 'if (i != 5)', correct: true}
+     ]
+ },
+
+  {  question: 'How can you add a comment in a JavaScript?',
+     answers: [
+     {text:'<!--This is a comment-->', correct: false},
+     {text: '//This is a comment', correct: true},
+     {text: ' "This is a comment" ', correct: false},
+     {text: '${This is a comment}', correct: false}
+     ]
+ },
+
+  {  question: 'What is the correct way to write a JavaScript array?',
+     answers: [
+     {text: 'const colors = ["red", "green", "blue"]', correct: true},
+     {text: 'const colors = [1:"red", 2:"green", 3:"blue"]', correct: false},
+     {text: 'const colors = "red", "green", "blue"]', correct: false},
+     {text: 'const colors = 1=("red"), 2=("green"), 3=("blue")', correct: false}
+     ]
+ }
+]
+
+/* This variable for remaining-time. 
+When Test start it start to decrease*/
+
+let seconds = 300;

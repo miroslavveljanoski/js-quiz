@@ -19,45 +19,35 @@
     <script src="./src/data.js"></script>
     <script src="./src/log.js"></script>
     <script src="./src/init.js"></script>
+    <script src="./src/handlers/starter.js"></script>
   </head>
 
   <body>
-    <!-- HEADER -->
+  
     <div class="container">
-      <header id="container-header">
-        <div id="welcome-title">
-          <h2>Welcome to our JavaScript Quiz</h2>
-        </div>
-        <div id="btn-one">
-          <button class="btn" id="btn-cheat">CHEAT</button>
-        </div>
-        <div id="btn-two">
-          <p id="score">SCORE:</p>
-          <p id="answer">ANSWER:</p>
-        </div>
-      </header>
-      <!-- MAIN -->
-      <main id="container-main">
-        <div id="question">
-          <p>What are the different ways to declare a JS variable?</p>
-        </div>
-        <div id="answers">
-          <button class="choices" id="first-answer">constant, let, variable</button>
-          <button class="choices" id="second-answer">var, const, let, function</button>
-          <button class="choices" id="third-answer">var, let, const</button>
-        </div>
-      </main>
+      <div id="time-control" class="hide">Welcome to our JavaScript Quiz</div>
+  
+      <div id="question-container" class="hide">
 
-      <!-- FOOTER -->
-      <div id="container-footer">
-        <button class="btn" id="btn-source">SOURCE</button>
-        <button class="btn" id="btn-reset">RESET</button>
-        <button class="btn" id="btn-next">NEXT</button>
+        <div id="question" class='question'>Question</div>
+
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+        </div>
+      </div>
+  
+      <div class="controls">
+        <div id="sources">
+        </div>
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
       </div>
     </div>
 
     <!-- load listeners -->
-
+    <script src="./src/listeners/starter.js"></script>
     <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
     <script src="./lib/review-buttons.js"></script>
