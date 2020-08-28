@@ -140,12 +140,14 @@ function add(e){
                      array.push(5);
                      const sum = array.reduce((total, amount) => +total + +amount); 
                      score.innerHTML = `${sum}`;
+                     exp.style.display = 'none';
                 }else{
                       sound2.play();
                       sound1.play();
                       finalAnswer.innerHTML = `Incorrect ! the answer is ${store}`;
                       list.style.backgroundColor = 'red';
                       array.push(0);
+                      exp.style.display = 'none';
                 }
                 // logging
                 
