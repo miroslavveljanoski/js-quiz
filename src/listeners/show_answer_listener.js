@@ -1,0 +1,1 @@
+document.getElementById('answers').addEventListener('click', showAnswer);

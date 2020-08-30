@@ -56,24 +56,31 @@ To help you understand and debug your projects you will learn about logging - th
 
 - Write all questions, possible answers, correct answers and links in the "questions" array in the data.js file.
 
-## 2.
+## 2. Answer the questions
 
-**As a user I want to see..**
+**As a user I want to answer the questions and see my result, after my every answer i should be able to see the updated score **
 
-> Assigned to
+> Assigned to `oguz`
 
 ### REPO
 
-- This user story is developed on branch `_`.
+- This user story is developed on branch `answering_question`.
 - This branch is merged to `master` branch after completion.
 
 ### Changes in HTML
 
+- Added span tags for answer and score to manipulate better
+
 ### Changes in CSS
+
+- Created the `correct` and `incorrect` classes to change the background color of the answer buttons.
 
 ### Changes in JavaScript
 
----
+- Added a `click` event with eventListeners to answer buttons to interact when the user answers
+- Used `event` to get the response given by the user
+- Wrote a logic function to check whether the answer is correct or not
+- Manipulated the score and answer with the logic function, changed the button backgrounds, according to the user response
 
 ## 3.
 

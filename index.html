@@ -19,6 +19,7 @@
     <script src="./src/data.js"></script>
     <script src="./src/log.js"></script>
     <script src="./src/init.js"></script>
+    <script src='./src/handlers/show_answer.js'></script>
   </head>
 
   <body>
@@ -32,19 +33,19 @@
           <button class="btn" id="btn-cheat">CHEAT</button>
         </div>
         <div id="btn-two">
-          <p id="score">SCORE:</p>
-          <p id="answer">ANSWER:</p>
+          <p id="score">SCORE: <span id='scoreUpdate'>0</span></p>
+          <p id="answer">ANSWER: <span id='answeredUpdate'>0</span></p>
         </div>
       </header>
       <!-- MAIN -->
       <main id="container-main">
         <div id="question">
-          <p>What are the different ways to declare a JS variable?</p>
+          <p id='question_text'>What are the different ways to declare a JS variable?</p>
         </div>
         <div id="answers">
-          <button class="choices" id="first-answer">constant, let, variable</button>
-          <button class="choices" id="second-answer">var, const, let, function</button>
-          <button class="choices" id="third-answer">var, let, const</button>
+          <button class="choices" data-number='0' id="first-answer">constant, let, variable</button>
+          <button class="choices" data-number='1' id="second-answer">var, const, let, function</button>
+          <button class="choices" data-number='2' id="third-answer">var, let, const</button>
         </div>
       </main>
 
@@ -54,6 +55,10 @@
         <button class="btn" id="btn-reset">RESET</button>
         <button class="btn" id="btn-next">NEXT</button>
       </div>
+
+      <div class="user_info">
+        <p class="text" id="user_info"></p>
+      </div>
     </div>
 
     <!-- load listeners -->
@@ -61,5 +66,6 @@
     <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
     <script src="./lib/review-buttons.js"></script>
+    <script src="src/listeners/show_answer_listener.js"></script>
   </body>
 </html>
