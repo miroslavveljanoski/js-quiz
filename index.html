@@ -7,6 +7,9 @@
 
     <link href="./style.css" rel="stylesheet" />
 
+    <!--reset function-->
+    <script src="src/handlers/reset.js"></script>
+
     <!-- load the testing dependencies -->
     <script src="./lib/chai.js"></script>
     <script src="./lib/describe-it.js"></script>
@@ -20,10 +23,25 @@
     <script src="./src/log.js"></script>
     <script src="./src/init.js"></script>
     <script src='./src/handlers/show_answer.js'></script>
+    <script src="./src/logic/getCurrent.js"></script>
+    <script src="./src/logic/getAnswer.js"></script>
+    <script src="./src/logic/getNrOfQuestions.js"></script>
+    <script src="./src/handlers/cheatBtn-handler.js"></script>
+    <script src="./src/logic/showQuestion.js"></script>
+    <script src="./src/logic/getQuestion.js"></script>
+    
   </head>
 
   <body>
+    <div id="explanation_div">
+      <h1>This is a Quiz Game</h1>
+      <p>This JS quiz is part of the web development course in HackYourFuture Belgium. <br>
+        With this quiz you can check the level of your knowledge for JavaScript programming language <br>
+        Click on the button "Start" when your are ready</p>
+        <button id="btn-start" class="btn">START</button>
+    </div>
     <!-- HEADER -->
+    <div id="play_quiz_div">
     <div class="container">
       <header id="container-header">
         <div id="welcome-title">
@@ -40,12 +58,12 @@
       <!-- MAIN -->
       <main id="container-main">
         <div id="question">
-          <p id='question_text'>What are the different ways to declare a JS variable?</p>
+          <p id='question_text'>Question</p>
         </div>
         <div id="answers">
-          <button class="choices" data-number='0' id="first-answer">constant, let, variable</button>
-          <button class="choices" data-number='1' id="second-answer">var, const, let, function</button>
-          <button class="choices" data-number='2' id="third-answer">var, let, const</button>
+          <button class="choices" data-number='0' id="first-answer">Answer 1</button>
+          <button class="choices" data-number='1' id="second-answer">Answer 2</button>
+          <button class="choices" data-number='2' id="third-answer">Answer 3</button>
         </div>
       </main>
 
@@ -61,7 +79,16 @@
       </div>
     </div>
 
+  <!--reset listener-->
+    <script src="src/listeners/reset.js"></script>
+
+  </div>
+
     <!-- load listeners -->
+    <script src="./src/listeners/startBtn-listener.js"></script>
+
+
+    <script src="./src/listeners/cheatBtn-listener.js"></script>
 
     <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
