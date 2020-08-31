@@ -28,6 +28,9 @@ function showAnswer(event) {
         answered++;
         answeredNumber.innerHTML = answered;
         buttons.forEach(btn=>{
+            if(btn.innerText == correctAns){
+                btn.classList.add('correct');
+            }
             btn.setAttribute("disabled", true);
         });
         inform.innerHTML = 'YOU ARE WRONG, IF YOU WANT TO LEARN YOU CAN CLICK SOURCE BUTTON';
