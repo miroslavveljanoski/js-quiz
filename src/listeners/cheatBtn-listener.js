@@ -1,0 +1,1 @@
+document.getElementById("btn-cheat").addEventListener("click", buttonCheatHandler);
