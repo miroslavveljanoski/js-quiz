@@ -52,7 +52,6 @@ body {
   flex-direction: row;
   justify-content: flex-end;
 }
-
 #btn-two {
   display: flex;
   flex-direction: row;
@@ -82,4 +81,110 @@ body {
   width: 40%;
   justify-content: space-around;
   margin: 20px;
+}
+
+/* Add question */
+
+#btn-add{
+  margin-right: 35%;
+}
+#btn-add a{
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+section{
+  background-color:rgb(73, 110, 18);
+  box-shadow: 5px 5px 10px 5px black;
+  margin-top: 10%;
+  margin-left: 20%;
+  padding: 30px;
+  width: 50%;
+  border-radius: 10%;
+  }
+section h2{
+  color: white;
+  text-align: center;
+}  
+#container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  }
+#input1, #input2{
+  height: 30px;
+  width: 60%;
+  padding: 2px;
+  margin-left: 15%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  }
+#submit{
+  height: 30px;
+  margin-left: 40%;
+  }
+#label1, #label2{
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+.container1{
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+}
+.li{
+ list-style: none;
+}
+.answer{
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+}
+.delete{
+  background-color: white;
+  border: 1px solid white;
+  width: 15%;
+  height:35px;
+}
+.delete:hover{
+  background-color: red;
+  border: 1px solid red;
+}
+.exp{
+  background-color: white;
+  border: 1px solid white;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+}
+.sub{
+  background-color: white;
+  border: 2px solid white;
+  width: 20%;
+  height:35px;
+}
+.sub:hover{
+  background-color: green;
+  border: 2px solid green;
+}
+.cheat{
+  background-color: white;
+  border: 1px solid white;
+  width: 15%;
+  height:35px;
+  margin:1%;
+}
+.cheat:hover{
+  background-color: orange;
+  border: 1px solid orange;
+}
+#score1{
+  float: right;
+  margin-top: -10%;
+  margin-right: 5%;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -6,6 +6,8 @@
     <title>JS Quiz</title>
 
     <link href="./style.css" rel="stylesheet" />
+    <!---add question handler-->
+    <script src="./src/handlers/add-question.js"></script>
 
     <!--reset function-->
     <script src="src/handlers/reset.js"></script>
@@ -46,8 +48,13 @@
         <div id="welcome-title">
           <h2>Welcome to our JavaScript Quiz</h2>
         </div>
+        <!--Add question link-->
         <div id="btn-one">
+          <button class="btn" id="btn-add">
+            <a href="add-question.html" target="_blank">Add-Question</a>
+          </button>
           <button class="btn" id="btn-cheat">CHEAT</button>
+         
         </div>
         <div id="btn-two">
           <p id="score">SCORE:</p>
@@ -88,5 +95,7 @@
     <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
     <script src="./lib/review-buttons.js"></script>
+    <!--add question listener-->
+    <script src="./src/listeners/add-question.js"></script>
   </body>
 </html>
